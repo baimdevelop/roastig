@@ -1,0 +1,122 @@
+[
+    {
+        "trigger": "var ",
+        "message": "Serius masih pakai 'var'? Apa kamu juga masih pakai dial-up untuk internetan? Gunakan 'let' atau 'const' dong, ini sudah tahun 2024!"
+    },
+    {
+        "trigger": "==",
+        "message": "Lagi-lagi '==', emang kamu suka ambil risiko? '===' itu ada bukan buat pajangan, loh!"
+    },
+    {
+        "trigger": "function ",
+        "message": "Ah, 'function'? Apa kamu juga masih kode di Notepad? Gunakan arrow function biar keliatan lebih modern!"
+    },
+    {
+        "trigger": "console.log",
+        "message": "'console.log'? Aduh, debugging ala 2005 detected. Mungkin sudah waktunya move on ke debugger asli."
+    },
+    {
+        "trigger": "eval(",
+        "message": "'eval'? Serius? Mau bikin lubang keamanan sebesar Titanic di kode kamu? Hapus itu sekarang juga!"
+    },
+    {
+        "trigger": "for (",
+        "message": "Masih setia sama 'for'? Pasti kamu juga masih percaya pada iklan TV. Coba deh 'forEach' atau 'map' buat hidup lebih simpel."
+    },
+    {
+        "trigger": "while (",
+        "message": "'while'? Wah, siap-siap aja terjebak di loop tak berujung. Berani coba 'forEach' biar lebih elegan?"
+    },
+    {
+        "trigger": "document.write(",
+        "message": "'document.write'? Kayaknya kamu perlu buku sejarah web development, deh. Ini bukan tahun 1999 lagi!"
+    },
+    {
+        "trigger": "with (",
+        "message": "'with'? Ini kode atau labirin? Jangan pakai ini kalau nggak mau kode kamu jadi misteri hidup!"
+    },
+    {
+        "trigger": "setTimeout(",
+        "message": "'setTimeout'? Awas jangan sampai tidur karena timeout ini bisa jadi lebih lama dari yang kamu kira."
+    },
+    {
+        "trigger": "alert(",
+        "message": "Masih mainan 'alert'? Siap-siap aja dianggap annoying. Gunakan modal atau toast, biar lebih profesional."
+    },
+    {
+        "trigger": "== null",
+        "message": "'== null'? Ini pasti jebakan! Gunakan '=== null' atau '!== null' kalau kamu nggak mau ada error tak terduga."
+    },
+    {
+        "trigger": "try {",
+        "message": "'try-catch' detected. Semoga kamu nggak lagi-lagi menelan error tanpa log, atau siap-siap kebingungan di kemudian hari."
+    },
+    {
+        "trigger": "parseInt(",
+        "message": "Pasti kamu lupa nambahin radix di 'parseInt'. Tanpa itu, hasilnya bisa aja bikin kamu pusing tujuh keliling."
+    },
+    {
+        "trigger": "Math.random(",
+        "message": "'Math.random' buat kriptografi? Ah, siap-siap aja kalau random number kamu gampang ditebak."
+    },
+    {
+        "trigger": "== false",
+        "message": "Kenapa nggak langsung '!condition'? Lebih pendek, lebih jelas, dan kamu bisa lebih cepat move on."
+    },
+    {
+        "trigger": "== true",
+        "message": "Nulis '== true' itu sama kayak bilang air itu basah. Langsung aja 'if(condition)' biar lebih to the point."
+    },
+    {
+        "trigger": "if (typeof",
+        "message": "'typeof'? Bagus sih, tapi pastikan kamu nggak cuma gaya-gayaan pakai ini. Tahu bedanya dengan 'instanceof'?"
+    },
+    {
+        "trigger": "window.",
+        "message": "Main-main sama 'window' object? Jangan heran kalau satu saat semuanya berantakan. Global scope bukan taman bermain!"
+    },
+    {
+        "trigger": "new Array(",
+        "message": "'new Array'? Udah cukup dengan komplikasi hidup, bro. Gunakan '[]' aja biar lebih simpel."
+    },
+    {
+        "trigger": "== undefined",
+        "message": "'== undefined'? Ini pasti jalan pintas yang nanti bikin pusing. Gunakan 'typeof variable === \"undefined\"' biar aman."
+    },
+    {
+        "trigger": "++i",
+        "message": "'++i'? Apa kamu juga nulis puisi pakai Bahasa Latin Kuno? Pake 'i++' aja deh, lebih universal."
+    },
+    {
+        "trigger": "i--",
+        "message": "Main-main sama 'i--'? Ini bukan permainan anak-anak, pastikan kamu tahu persis apa yang kamu lakukan!"
+    },
+    {
+        "trigger": "arguments[",
+        "message": "Masih pakai 'arguments'? Coba deh move on ke parameter rest '...' biar lebih fleksibel dan elegan."
+    },
+    {
+        "trigger": "function* ",
+        "message": "Generator function? Kamu yakin bisa handle kerumitan ini? Jangan sampai nanti kamu kebingungan sendiri."
+    },
+    {
+        "trigger": "delete ",
+        "message": "'delete' di properti objek? Siap-siap kejutan, karena ini mungkin nggak berfungsi sesuai ekspektasi kamu."
+    },
+    {
+        "trigger": "typeof NaN",
+        "message": "'typeof NaN' = 'number'? Bisa bikin otak berasap kalau nggak hati-hati. Ini satu dari banyak jebakan di JS!"
+    },
+    {
+        "trigger": "Array.prototype.push.apply(",
+        "message": "Kamu tahu trik ini? Keren sih, tapi jangan heran kalau performa menurun pada array besar. Pikir-pikir dulu!"
+    },
+    {
+        "trigger": "String.prototype.split(",
+        "message": "'split' bisa bikin lebih dari sekadar split. Pastikan kamu nggak bikin data terpecah yang nggak kamu inginkan."
+    },
+    {
+        "trigger": "isNaN(",
+        "message": "'isNaN'? Berbahaya, bro! Pakai 'Number.isNaN' aja buat pemeriksaan yang lebih ketat dan nggak bikin sakit kepala."
+    }
+]

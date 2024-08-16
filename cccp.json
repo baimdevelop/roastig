@@ -1,0 +1,40 @@
+{
+    "html": [
+        {
+            "regex": "<!DOCTYPE html>",
+            "message": "Seriusan, <!DOCTYPE html> aja lupa? Dasar pemula!"
+        },
+        {
+            "regex": "<center>",
+            "message": "Masih pakai <center>? Apa kamu hidup di tahun 1995?"
+        },
+        {
+            "regex": "style=",
+            "message": "Inline CSS? Kamu pikir ini cara keren? Belajar yang bener deh!"
+        }
+    ],
+    "css": [
+        {
+            "regex": "!important",
+            "message": "!important lagi? Udah pasti kamu nggak ngerti cara styling yang bener!"
+        },
+        {
+            "regex": "\\*",
+            "message": "Universal selector? Serius, kamu nulis CSS atau nuklir?"
+        }
+    ],
+    "js": [
+        {
+            "regex": "var ",
+            "message": "Masih pakai var? Udah 2024, saatnya pindah ke let atau const!"
+        },
+        {
+            "regex": "==",
+            "message": "Pakai == bukan ===? Kayaknya kamu masih butuh belajar basic deh!"
+        },
+        {
+            "regex": "console\\.log",
+            "message": "console.log? Kamu debug atau cuma ngetik buat seru-seruan?"
+        }
+    ]
+}

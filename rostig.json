@@ -1,122 +1,137 @@
-[
-    {
-        "trigger": "var ",
-        "message": "Serius masih pakai 'var'? Apa kamu juga masih pakai dial-up untuk internetan? Gunakan 'let' atau 'const' dong, ini sudah tahun 2024!"
-    },
-    {
-        "trigger": "==",
-        "message": "Lagi-lagi '==', emang kamu suka ambil risiko? '===' itu ada bukan buat pajangan, loh!"
-    },
-    {
-        "trigger": "function ",
-        "message": "Ah, 'function'? Apa kamu juga masih kode di Notepad? Gunakan arrow function biar keliatan lebih modern!"
-    },
-    {
-        "trigger": "console.log",
-        "message": "'console.log'? Aduh, debugging ala 2005 detected. Mungkin sudah waktunya move on ke debugger asli."
-    },
-    {
-        "trigger": "eval(",
-        "message": "'eval'? Serius? Mau bikin lubang keamanan sebesar Titanic di kode kamu? Hapus itu sekarang juga!"
-    },
-    {
-        "trigger": "for (",
-        "message": "Masih setia sama 'for'? Pasti kamu juga masih percaya pada iklan TV. Coba deh 'forEach' atau 'map' buat hidup lebih simpel."
-    },
-    {
-        "trigger": "while (",
-        "message": "'while'? Wah, siap-siap aja terjebak di loop tak berujung. Berani coba 'forEach' biar lebih elegan?"
-    },
-    {
-        "trigger": "document.write(",
-        "message": "'document.write'? Kayaknya kamu perlu buku sejarah web development, deh. Ini bukan tahun 1999 lagi!"
-    },
-    {
-        "trigger": "with (",
-        "message": "'with'? Ini kode atau labirin? Jangan pakai ini kalau nggak mau kode kamu jadi misteri hidup!"
-    },
-    {
-        "trigger": "setTimeout(",
-        "message": "'setTimeout'? Awas jangan sampai tidur karena timeout ini bisa jadi lebih lama dari yang kamu kira."
-    },
-    {
-        "trigger": "alert(",
-        "message": "Masih mainan 'alert'? Siap-siap aja dianggap annoying. Gunakan modal atau toast, biar lebih profesional."
-    },
-    {
-        "trigger": "== null",
-        "message": "'== null'? Ini pasti jebakan! Gunakan '=== null' atau '!== null' kalau kamu nggak mau ada error tak terduga."
-    },
-    {
-        "trigger": "try {",
-        "message": "'try-catch' detected. Semoga kamu nggak lagi-lagi menelan error tanpa log, atau siap-siap kebingungan di kemudian hari."
-    },
-    {
-        "trigger": "parseInt(",
-        "message": "Pasti kamu lupa nambahin radix di 'parseInt'. Tanpa itu, hasilnya bisa aja bikin kamu pusing tujuh keliling."
-    },
-    {
-        "trigger": "Math.random(",
-        "message": "'Math.random' buat kriptografi? Ah, siap-siap aja kalau random number kamu gampang ditebak."
-    },
-    {
-        "trigger": "== false",
-        "message": "Kenapa nggak langsung '!condition'? Lebih pendek, lebih jelas, dan kamu bisa lebih cepat move on."
-    },
-    {
-        "trigger": "== true",
-        "message": "Nulis '== true' itu sama kayak bilang air itu basah. Langsung aja 'if(condition)' biar lebih to the point."
-    },
-    {
-        "trigger": "if (typeof",
-        "message": "'typeof'? Bagus sih, tapi pastikan kamu nggak cuma gaya-gayaan pakai ini. Tahu bedanya dengan 'instanceof'?"
-    },
-    {
-        "trigger": "window.",
-        "message": "Main-main sama 'window' object? Jangan heran kalau satu saat semuanya berantakan. Global scope bukan taman bermain!"
-    },
-    {
-        "trigger": "new Array(",
-        "message": "'new Array'? Udah cukup dengan komplikasi hidup, bro. Gunakan '[]' aja biar lebih simpel."
-    },
-    {
-        "trigger": "== undefined",
-        "message": "'== undefined'? Ini pasti jalan pintas yang nanti bikin pusing. Gunakan 'typeof variable === \"undefined\"' biar aman."
-    },
-    {
-        "trigger": "++i",
-        "message": "'++i'? Apa kamu juga nulis puisi pakai Bahasa Latin Kuno? Pake 'i++' aja deh, lebih universal."
-    },
-    {
-        "trigger": "i--",
-        "message": "Main-main sama 'i--'? Ini bukan permainan anak-anak, pastikan kamu tahu persis apa yang kamu lakukan!"
-    },
-    {
-        "trigger": "arguments[",
-        "message": "Masih pakai 'arguments'? Coba deh move on ke parameter rest '...' biar lebih fleksibel dan elegan."
-    },
-    {
-        "trigger": "function* ",
-        "message": "Generator function? Kamu yakin bisa handle kerumitan ini? Jangan sampai nanti kamu kebingungan sendiri."
-    },
-    {
-        "trigger": "delete ",
-        "message": "'delete' di properti objek? Siap-siap kejutan, karena ini mungkin nggak berfungsi sesuai ekspektasi kamu."
-    },
-    {
-        "trigger": "typeof NaN",
-        "message": "'typeof NaN' = 'number'? Bisa bikin otak berasap kalau nggak hati-hati. Ini satu dari banyak jebakan di JS!"
-    },
-    {
-        "trigger": "Array.prototype.push.apply(",
-        "message": "Kamu tahu trik ini? Keren sih, tapi jangan heran kalau performa menurun pada array besar. Pikir-pikir dulu!"
-    },
-    {
-        "trigger": "String.prototype.split(",
-        "message": "'split' bisa bikin lebih dari sekadar split. Pastikan kamu nggak bikin data terpecah yang nggak kamu inginkan."
-    },
-    {
-        "trigger": "isNaN(",
-        "message": "'isNaN'? Berbahaya, bro! Pakai 'Number.isNaN' aja buat pemeriksaan yang lebih ketat dan nggak bikin sakit kepala."
-    }
-]
+{
+    "var =": [
+        "Masih pake 'var'? Gimana sih!",
+        "Coba deh upgrade, bro!",
+        "Serius? Ini udah jaman 'const' dan 'let'!",
+        "Hadeh, udah ketinggalan zaman banget!",
+        "Kata siapa masih jaman 'var'? Bangkitlah!",
+        "Ini bukan jaman 'var', bro!",
+        "Wah, ini sih udah jadul, ayo move on!"
+    ],
+    "function =": [
+        "Ini bukan cara bikin fungsi yang bener!",
+        "Jangan bilang kamu masih pake 'function' gitu!",
+        "Serius, ada cara yang lebih modern!",
+        "Baca deh dokumentasinya, bisa jadi ketinggalan!",
+        "Ayo belajar ES6, baper banget nih!",
+        "Kalo masih pake 'function', harus belajar lagi nih!",
+        "Ini sih bukan cara kekinian buat fungsi!"
+    ],
+    "let =": [
+        "Kalo masih bingung sama 'let', berarti udah lama gak ngoding!",
+        "Hah, masih pake 'let' tapi belom ngerti scoping?",
+        "Jangan bingung deh, 'let' itu simple!",
+        "Ada yang lebih gampang daripada 'let', belajar dulu yuk!",
+        "Kalo 'let' masih bikin bingung, coba baca lagi!",
+        "Mudah banget kok, jangan ribet!",
+        "Jangan sampe ketinggalan, belajar 'let' dengan benar!"
+    ],
+    "const =": [
+        "Serius? 'const' itu buat apa ya?",
+        "Aduh, 'const' aja bingung?",
+        "Belajar 'const' itu penting banget, bro!",
+        "Gak ngerti 'const'? Ayo belajar lagi!",
+        "Jangan cuma tau 'const', harus ngerti cara kerjanya!",
+        "Belajar 'const' itu dasar banget!",
+        "Jangan cuma nyatet, pahami juga fungsi 'const'!"
+    ],
+    "arrow function =": [
+        "Arrow function? Gimana sih cara kerjanya!",
+        "Masih bingung dengan arrow function?",
+        "Gampang kok, belajar arrow function aja!",
+        "Arrow function bikin kode lebih bersih!",
+        "Pake arrow function udah kekinian!",
+        "Baca dokumentasi deh, arrow function itu praktis!",
+        "Jangan ketinggalan, pelajari arrow function!"
+    ],
+    "promises =": [
+        "Belum ngerti promises? Pasti bingung!",
+        "Ayo, promises itu penting banget!",
+        "Jangan sampe nyerah, promises itu gak susah!",
+        "Promises bikin async coding jadi mudah!",
+        "Belajar promises itu harus, jangan skip!",
+        "Jangan takut sama promises, belajar pelan-pelan!",
+        "Promises itu kunci buat code modern!"
+    ],
+    "async/await =": [
+        "Async/await bikin code lebih bersih!",
+        "Gak ngerti async/await? Coba pelajari lagi!",
+        "Async/await itu penting, jangan diabaikan!",
+        "Belajar async/await itu basic, ayo semangat!",
+        "Kalo bingung, baca dokumentasinya tentang async/await!",
+        "Async/await bikin coding jadi lebih gampang!",
+        "Jangan sampe tertinggal, pelajari async/await!"
+    ],
+    "null =": [
+        "Null pointer? Hati-hati bisa crash!",
+        "Gak ngerti null? Itu berbahaya, bro!",
+        "Jangan sampe code lo penuh null check!",
+        "Null reference bisa bikin bug parah!",
+        "Periksa null sebelum dipake, jangan males!",
+        "Null pointer exception? Ayo belajar cara hindarinya!",
+        "Null itu musuh utama dalam pemrograman!"
+    ],
+    "undefined =": [
+        "Undefined? Wah, kode lo bisa kacau!",
+        "Gak ngerti undefined? Periksa lagi deh!",
+        "Undefined itu bahaya, bisa bikin error!",
+        "Jangan biarkan variable undefined, debug dulu!",
+        "Undefined itu masalah besar, hati-hati!",
+        "Variable undefined bikin debug jadi susah!",
+        "Cek lagi, jangan sampe ada yang undefined!"
+    ],
+    "type error =": [
+        "Type error? Itu bisa bikin aplikasi crash!",
+        "Gak ngerti type error? Periksa tipe data lo!",
+        "Type mismatch bikin masalah, hati-hati!",
+        "Cek tipe data, jangan sampe type error!",
+        "Type error bisa bikin bug susah dicari!",
+        "Pahami type system, hindari type error!",
+        "Debugging type error itu bikin stress, waspada!"
+    ],
+    "syntax error =": [
+        "Syntax error? Itu dasar banget!",
+        "Cek syntax lo, jangan bikin error!",
+        "Syntax error bikin kode lo gak jalan!",
+        "Periksa kembali syntax sebelum run!",
+        "Syntax error bisa bikin program gagal compile!",
+        "Jangan asal ketik, cek syntax lo dulu!",
+        "Syntax error sering bikin frustasi, hati-hati!"
+    ],
+    "debugging =": [
+        "Debugging? Biasa aja, yang penting ketemu masalah!",
+        "Jangan terlalu frustasi, debugging itu bagian dari proses!",
+        "Masalah debugging? Ayo, cek log-nya lagi!",
+        "Debugging bisa bikin stress, sabar aja!",
+        "Kalo debugging lama, coba pendekatan lain!",
+        "Debugging itu seni, bukan cuma nyari error!",
+        "Jangan panik, setiap bug bisa dipecahkan!"
+    ],
+    "performance =": [
+        "Masalah performa? Cek dulu bottleneck-nya!",
+        "Ayo, periksa performa code lo!",
+        "Jangan biarkan masalah performa bikin aplikasi lambat!",
+        "Performance bottleneck? Analisa dengan alat profiling!",
+        "Performa yang buruk bisa bikin user frustrasi!",
+        "Jangan abaikan optimasi, cek performa secara rutin!",
+        "Performance tuning itu penting, jangan lupa!"
+    ],
+    "compatibility =": [
+        "Masalah kompatibilitas? Cek browser support!",
+        "Jangan biarkan masalah kompatibilitas bikin bug!",
+        "Cek kompatibilitas browser sebelum deploy!",
+        "Kompatibilitas sering bikin bug yang sulit di-debug!",
+        "Jangan lupa uji di berbagai platform!",
+        "Masalah kompatibilitas bisa jadi nightmare, hati-hati!",
+        "Pastikan aplikasi lo kompatibel di semua environment!"
+    ],
+    "security =": [
+        "Masalah keamanan? Jangan abaikan!",
+        "Cek semua aspek keamanan aplikasi lo!",
+        "Keamanan itu penting banget, jangan anggap remeh!",
+        "Jangan sampe aplikasi lo jadi target serangan!",
+        "Periksa vulnerability dan patch segera!",
+        "Keamanan adalah prioritas utama, jangan terlambat!",
+        "Pastikan semua data sensitif terlindungi!"
+    ]
+}
